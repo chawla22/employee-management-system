@@ -34,3 +34,29 @@ const employee2 = new Employee("Alice", "Logistics");
 const employee3 = new Employee("Roger", "Marketing");   
 const manager1 = new Manager("Jane", "HR", 5);
 const manager2 = new Manager("Bob", "Accounts", 10);
+
+
+//step 4: Creating a class Company with property employees(an Array).
+// Adding a method addEmployee() to add an Employee to the Array
+// Adding a method listEmployee() to log each  employee's description
+
+class Company{
+    constructor(){
+        this.employees = []; //creating an Array to hold employees
+
+    }
+    addEmployee(employee){
+        console.log("Adding an employee to the Array");
+        this.employees.push(employee);
+    }
+
+    // method to list all employees
+    // using forEach to iterate over the employees Array
+    listEmployees(){
+        this.employees.forEach(emp=>{
+        console.log(emp.describe());
+        }
+        );
+    }
+
+}
