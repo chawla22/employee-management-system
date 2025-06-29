@@ -26,3 +26,11 @@ class Manager extends Employee {
         return `${super.describe()}, Team Size: ${this.teamSize}`;
     }
 }
+
+
+//step 3: creating objects of  employees and managers using new Employee() and new Manager()
+const employee1 = new Employee("Steven", "Sales");
+const employee2 = new Employee("Alice", "Logistics"); 
+const employee3 = new Employee("Roger", "Marketing");   
+const manager1 = new Manager("Jane", "HR", 5);
+const manager2 = new Manager("Bob", "Accounts", 10);
