@@ -60,3 +60,15 @@ class Company{
     }
 
 }
+
+
+//step 5: Instantiating the Company object
+// adding both employee and manager instances and calling listEmployees()
+const myCompany = new Company();
+myCompany.addEmployee(employee1);
+myCompany.addEmployee(employee2);
+myCompany.addEmployee(employee3);
+myCompany.addEmployee(manager1);
+myCompany.addEmployee(manager2);
+
+myCompany.listEmployees();
